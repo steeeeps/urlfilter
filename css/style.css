@@ -1,0 +1,25 @@
+body {
+	padding-top: 50px;
+}
+.setContent {
+	margin: 20px;
+	background-color: #fff;
+	border: 1px solid #eee;
+	padding: 10px;
+}
+.contentItem {
+	padding: 10px;
+}
+/*bootstrap override*/
+.form-control {
+	display: inline-block;
+	width: 350px;
+	margin-right: 15px;
+}
+.table {
+	width: 700px;
+}
+.close {
+	float: none;
+	padding-left: 7px !important;
+}

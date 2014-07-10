@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>选项</title>
+		<link rel="stylesheet" href="libs/bootstrap-3.1.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/setting.css" />
+		<link rel="stylesheet" href="libs/bootstrap-3.1.1/datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+	</head>
+	<script type="text/javascript"></script>
+	<body >
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">URL Filter</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#urllist">域名设置</a>
+					</li>
+					<li>
+						<a href="#timelist">时间段设置</a>
+					</li>
+					<li>
+						<a href="http://steeeeps.net/2014/05/19/url-filter/" target="_blank">关于</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<a name="urllist"></a>
+		<div class="setContent">
+			<div class="contentItem">
+				<label for="urlinput" class=" control-label">输入域名：</label>
+				<input type="text" class="form-control" id="urlinput" placeholder="http://">
+				<button type="button" class="btn btn-default" id="addUrl">
+					添加
+				</button>
+			</div>
+			<div class="contentItem">
+				<table class="table table-hover" id="urltable">
+					<thead>
+						<tr>
+							<th>域名</th>
+							<th>删除</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+		<a name="timelist"></a>
+		<div class="setContent">
+			<div class="contentItem" style="display: table;">
+				<label for="starttime" class=" control-label" style="display: table-cell;">起始时间：</label>
+				<div class="input-group date timer-wraper" id="starttime" style="display: table-cell;">
+					<input type="text" class="form-control time-control" disabled="disabled">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span> </span>
+				</div>
+				<label for="endtime" class=" control-label" style="display: table-cell;padding: 0px 5px;">终止时间：</label>
+				<div class="input-group date timer-wraper" id="endtime" style="display: table-cell;">
+					<input type="text" class="form-control time-control" disabled="disabled">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span> </span>
+				</div>
+				<div style="display: table-cell;padding: 0px 15px;">
+					<button type="button" class="btn btn-default" id="addtime" style="">
+						添加
+					</button>
+				</div>
+			</div>
+			<div class="contentItem">
+				<table class="table table-hover" id="timetable">
+					<thead>
+						<tr>
+							<th>起始时间</th>
+							<th>终止时间</th>
+
+							<th>删除</th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script type="text/javascript" src="libs/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="libs/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="libs/moment.min.js"></script>
+		<script type="text/javascript" src="libs/bootstrap-3.1.1/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+		<script type="text/javascript" src="js/db.js"></script>
+		<script type="text/javascript" src="js/setting.js"></script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+html, body, div, hr {
+	padding:0;
+	margin:0;
+}
+body {
+	font-family:'Helvetica Neue, Helvetica, Arial, sans-serif';
+	font-size:14px;
+}
+hr {
+	margin:2px 0;
+	border-top:1px solid #eee;
+}
+.popup-content {
+	margin:2px 0;
+}
+.popup-item {
+	padding:4px 25px;
+	-webkit-padding-start:6px;
+	margin:0 2px;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.popup-item:hover {
+	padding:3px 24px;
+	-webkit-padding-start:5px;
+	border:solid 1px #bcd;
+	border-radius:3px;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.4, hsl(215, 67%, 97%)), color-stop(0.41, hsl(213, 48%, 95%)));
+}
+.popup-item:active {
+	padding:3px 24px;
+	-webkit-padding-start:5px;
+	border:solid 1px #abc;
+	border-radius:3px;
+	background:#dde7f2 none;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #e8eef4), color-stop(1, #f5f9f4));
+}
+.popup-item img {
+	vertical-align:text-top;
+}
+.popup-item span {
+	-webkit-padding-start:4px;
+}
+.icon {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	vertical-align:middle;
+}
+.checked .icon {
+	background:url(../images/checked.png) !important;
+}
