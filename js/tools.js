@@ -2,25 +2,20 @@
 
     $(init);
 
-    function saveAs1(blob, filename) {
-
-        var blob = new Blob(["Hello, world!"], {
-            type : "text/plain;charset=utf-8"
-        });
-        saveAs(blob, "hello world.txt");
-    }
-
-    function import1() {
-
-    }
-
     function init() {
         $("#import").click(function() {
             $("#jsonfile").click();
         });
         $("#jsonfile").change(selectFileHander);
         $("#export").click(function() {
-            saveAs1();
+            var blob = new Blob([localStorage.getItem("filterObj")], {
+                type : "text/plain;charset=utf-8"
+            });
+            saveAs(blob, "urlfiter.txt");
+        });
+        $("#removeall").click(function(){
+            localStorage.removeItem("filterObj");
+               window.location.reload();
         });
     }
 

@@ -30,15 +30,21 @@
 					<li>
 						<a href="http://steeeeps.net/2014/05/19/url-filter/" target="_blank">关于</a>
 					</li>
-					<li >
-						<a href="#" id="import">导入</a>
-						<input type="file" id="jsonfile"name="" style="display:none;"/>
-					</li>
-					<li >
-						<a href="#" id="export">导出</a>
-					</li>
-					<li>
-						<a href="#removeall">删除</a>
+					<li class="dropdown">
+						<a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe" style="color: white"></i>工具 <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a id="import" href="#" data-toggle="collapse" data-target=".navbar-collapse.in" ><i class="fa fa-arrows-alt"></i>导入</a>
+								<input type="file" id="jsonfile"name="" style="display:none;"/>
+							</li>
+							<li>
+								<a id="export" href="#" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-arrows-alt"></i>导出</a>
+							</li>
+							<li class="divider hidden-xs"></li>
+							<li>
+								<a href="#" id="removeall"><i class="fa fa-user-md"></i>清空设置</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -105,7 +111,7 @@
 		<script type="text/javascript" src="libs/bootstrap-3.1.1/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 		<script type="text/javascript" src="js/db.js"></script>
 		<script type="text/javascript" src="libs/FileSaver.js"></script>
-		<script type="text/javascript" src="js/file.js"></script>
+		<script type="text/javascript" src="js/tools.js"></script>
 		<script type="text/javascript" src="js/setting.js"></script>
 	</body>
 </html>
